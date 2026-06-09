@@ -23,7 +23,7 @@ jobs:
 
       - name: Check site
         env:
-          WATCH_URL: "https://example.com"   # <-- the page to watch
+          WATCH_URL: "https://www.usaroundnet.org/rankings"   # <-- the page to watch
           WATCH_SELECTOR: ""                 # <-- e.g. "#price"; leave empty for whole page
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python watch.py
